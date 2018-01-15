@@ -1,0 +1,140 @@
+/*=============Fonts=============*/
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('../fonts/DS-DIGI.TTF');
+}
+
+
+/*==============main================*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/grass.jpg) no-repeat;
+    background-size: 100%;
+    font-family: DS-Digital;
+}
+canvas {
+    max-width: 800px;
+    max-height: 600px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    margin: 0;
+}
+.player-score {
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    line-height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    border: 5px solid #fff;
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+}
+
+#player1 {
+    left: 100px;
+}
+
+#player2 {
+    right: 100px;
+}
+
+#win {
+    display: none;
+    max-width: 800px;
+    max-height: 600px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#win #play2 {
+    cursor: pointer;
+}
+#win p {
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+}
+#lost {
+    display: none;
+    max-width: 800px;
+    max-height: 600px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#lost #play3 {
+    cursor: pointer;
+}
+#lost p {
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+#start {
+    display: none;
+    max-width: 800px;
+    max-height: 600px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    background: lime;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#start #play1{
+
+    cursor: pointer;
+}
+#start p {
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+#start .instruction {
+    font-size: 30px;
+    border: 2px solid #000;
+    width: 400px;
+    margin: auto;
+}
+
+.play-again {
+    margin: 200px auto;
+}

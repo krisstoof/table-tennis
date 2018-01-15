@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Tennis Game</title>
+</head>
+
+<body>
+    <h1>Tennis Game</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="player1" class="player-score"></div>
+    <div id="player2" class="player-score"></div>
+    <div id="start">
+        <div class="play-again">
+            <p>Start Game</p>
+            <p id="play1">&raquo; Start &laquo;</p>
+            <p class="instruction">Use mouse to controll</p>
+        </div>
+    </div>
+    <div id="win">
+        <div class="play-again">
+            <p>You Won!!!</p>
+            <p id="play2">&raquo; Play again &laquo;</p>
+        </div>
+    </div>
+    <div id="lost">
+        <div class="play-again">
+            <p>You Lost!!!</p>
+            <p id="play3">&raquo; Play again &laquo;</p>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
