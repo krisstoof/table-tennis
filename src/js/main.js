@@ -1,7 +1,7 @@
 var canvas;
 var canvasContext;
-var ballX = 50;
-var ballY = 50;
+var ballX = 400;
+var ballY = 300;
 var ballSpeedX = 10;
 var ballSpeedY = 5;
 
@@ -39,7 +39,7 @@ window.onload = () => {
 function playAgain() {
     if(startingScreen) {
         startingScreen = false;
-        document.getElementById("start").style.display = "none";
+        document.getElementById("start").style.display = "none";  
     } else if (showingWinScreen) {
         if (player2Score >= WINNING_SCORE) {
             document.getElementById("win").style.display = "none";
@@ -123,9 +123,9 @@ function drawEverything() {
     // net
     drawNet();
     // left player paddle
-    colorRect(5, paddle1Y, PADDLE_THICKNESS, 100, 'white');
+    colorRect(3, paddle1Y, PADDLE_THICKNESS, 100, 'white');
     // right computer paddle
-    colorRect(canvas.width - PADDLE_THICKNESS - 5, paddle2Y, PADDLE_THICKNESS, 100, 'white');
+    colorRect(canvas.width - PADDLE_THICKNESS - 3, paddle2Y, PADDLE_THICKNESS, 100, 'white');
     // the ball
     colorBall(ballX, ballY, 10, 'white');
     
